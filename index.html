@@ -1,0 +1,125 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Right Slider Bootstrap</title>
+<link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/slider.css" rel="stylesheet">
+<!-- Another CSS -->
+
+
+  
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+<!--  **Slider right -->
+<div id="wrapper" class="">
+  <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+           <div class="div-ul-li">
+                <div class="visible-xs p-li">
+                    <!-- Visible XS -->
+                    <div class="p-p-close">
+			   <img src="img/close.png" class="m-close1" data-toggle="offcanvas" aria-hidden="true">
+                    </div>
+                </div> 
+              <div class="p-li">            
+                <a class="p-smooth-scroll p-lifestyle_link" href="#"><p class="p-menu-decr">Lifestyle</p></a>
+              </div>
+              <div class="p-li">
+                <a class="p-smooth-scroll p-lifestyle_link" href="#"><p class="p-menu-decr">Appetite</p></a>
+              </div>
+              <div class="p-li-p">
+                <a class="p-smooth-scroll p-lifestyle_link-p" href="#"><p class="p-menu-decr-p">Home</p></a>
+              </div>
+              <div class="p-li-p">
+                <a class="p-smooth-scroll p-lifestyle_link-p" href="#"><p class="p-menu-decr-p">About</p></a>
+              </div>
+              <div class="p-li-p">
+                <a class="p-smooth-scroll p-lifestyle_link-p" href="#"><p class="p-menu-decr-p">Products</p></a>
+              </div>
+              <div class="p-li-p">
+                <a class="p-smooth-scroll p-lifestyle_link-p" href="#"><p class="p-menu-decr-p">Contact</p></a>
+              </div>
+              
+           </div>
+        </nav>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <!-- Button hidden-xs -->
+            <button type="button" class="hidden-xs hamburger is-closed" data-toggle="offcanvas">
+                <span class="hamb-top"></span>
+          <span class="hamb-middle"></span>
+        <span class="hamb-bottom"></span>
+            </button>
+
+<!-- **** Content Here! **** -->
+<!-- **** Content Here! **** -->
+<!-- **** Content Here! **** -->
+<!-- **** Content Here! **** -->
+<!-- **** Content Here! **** -->
+<!-- **** Content Here! **** -->
+
+        </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" async="" src="http://a.klaviyo.com/media/js/analytics/analytics.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
+<!-- Anim men -->
+<script type="text/javascript">
+  $(document).ready(function () {
+  var trigger = $('.hamburger'),
+      overlay = $('.overlay'),
+     isClosed = false;
+
+    trigger.click(function () {
+      hamburger_cross();      
+    });
+
+    function hamburger_cross() {
+
+      if (isClosed == true) {          
+        overlay.hide();
+        trigger.removeClass('is-open');
+        trigger.addClass('is-closed');
+        isClosed = false;
+      } else {   
+        overlay.show();
+        trigger.removeClass('is-closed');
+        trigger.addClass('is-open');
+        isClosed = true;
+      }
+  }
+  
+  $('[data-toggle="offcanvas"]').click(function () {
+        $('#wrapper').toggleClass('toggled');
+  });  
+});
+</script>
+</body>
+</html>
